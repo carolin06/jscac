@@ -23,3 +23,14 @@ const myfunc=function(){
 
 }
 console.log(typeof myfunc);
+
+
+let userone={
+    email: "abc",
+    pass: "123"
+}
+
+let usertwo=userone
+
+usertwo.email="def"
+console.log(userone.email)
