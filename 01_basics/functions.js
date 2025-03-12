@@ -28,3 +28,19 @@ handle({
     username: "heyyy",
     price: 200
 })
+
+//SCOPE
+
+//{} is called scope 
+
+addone(5)
+
+function addone(num){
+    return num+1
+
+}//this wont give error
+
+addtwo(5)
+const addtwo=function(num){
+    return num+1
+}//this gives error cuz of hoisting
