@@ -6,13 +6,17 @@
     <title>DOM learning</title>
 </head>
 <body style="background-color:black;color:aliceblue;">
-    <div class="parent">
+    <!-- <div class="parent">
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
         <div class="day">Thursday</div>
        
-    </div>
+    </div> -->
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
 </body>
 <script>
     // const parent=document.querySelector('.parent')
@@ -44,6 +48,25 @@
     // const addText=document.createTextNode("chai")
     // div.appendChild(addText)
     // document.body.appendChild(div)
+
+
+    function add(lang){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild('li')
+
+
+    }
+    add('python');
+
+    //firstlang.outerHTML='<li>new</li>'
+
+    //.remove()
+
+    const sec=document.querySelector("li:nth-child(2)")
+    const newli=document.createElement('li')
+    newli.textContent="mojo"
+    sec.replaceWith(newli)
 </script>
 </html>
 
